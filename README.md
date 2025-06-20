@@ -1,100 +1,104 @@
-# 🛢️ Brazilian Fuel Prices Analysis Dashboard
-📊 Project Overview
-A comprehensive data analysis and visualization project examining Brazilian fuel prices from 2004 to 2021. This project transforms raw petroleum market data from Brazil's National Agency of Petroleum, Natural Gas, and Biofuels (ANP) into actionable business intelligence through interactive dashboards and statistical analysis.
+### 🛢️ Brazilian Fuel Prices Analysis Dashboard
 
-🎯 Perfect For:
-Petroleum industry professionals
+---
 
-Market analysts
+#### **📊 Project Overview**
 
-Energy sector investors
+A comprehensive data analysis and visualization project examining Brazilian fuel prices from **2004 to 2021**. This project transforms raw petroleum market data from Brazil's **National Agency of Petroleum, Natural Gas, and Biofuels (ANP)** into actionable business intelligence through interactive dashboards and statistical analysis.
 
-Data science portfolios
+---
 
-🚀 Key Features
-📈 Interactive Dashboard: React-based visualization with real-time filtering.
+### 🎯 **Perfect For**:
 
-🗺️ Regional Analysis: Price comparisons across Brazil's 5 regions and 27 states.
+* Petroleum industry professionals
+* Market analysts
+* Energy sector investors
+* Data science portfolios
 
-⛽ Multi-Fuel Analysis: Trends and correlations for Gasoline, Ethanol, and Diesel prices.
+---
 
-📊 Statistical Insights: Analysis of price volatility, market trends, and distribution.
+### 🚀 **Key Features**
 
-🔍 Data Processing: Clean, transform, and analyze 120,823+ records.
+* **📈 Interactive Dashboard**: React-based visualization with real-time filtering.
+* **🗺️ Regional Analysis**: Price comparisons across Brazil's 5 regions and 27 states.
+* **⛽ Multi-Fuel Analysis**: Trends and correlations for Gasoline, Ethanol, and Diesel prices.
+* **📊 Statistical Insights**: Analysis of price volatility, market trends, and distribution.
+* **🔍 Data Processing**: Clean, transform, and analyze **120,823+ records**.
+* **📱 Responsive Design**: Fully functional on desktop, tablet, and mobile devices.
 
-📱 Responsive Design: Fully functional on desktop, tablet, and mobile devices.
+---
 
-📋 Dataset Information
-Source: ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis)
+### 📋 **Dataset Information**
 
-Period: May 2004 – May 2021 (17 years)
+* **Source**: ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis)
+* **Period**: May 2004 – May 2021 (17 years)
+* **Records**: 120,823 entries
+* **Coverage**: All Brazilian states and regions
+* **Update Frequency**: Weekly
+* **Data Points**: Prices, stations surveyed, regional variations, volatility metrics
 
-Records: 120,823 entries
+---
 
-Coverage: All Brazilian states and regions
+### 📊 **Data Schema**
 
-Update Frequency: Weekly
+| Original Column (Portuguese) | English Translation          | Data Type | Description                         |
+| ---------------------------- | ---------------------------- | --------- | ----------------------------------- |
+| DATA INICIAL                 | Start Date                   | Date      | Week start date                     |
+| DATA FINAL                   | End Date                     | Date      | Week end date                       |
+| REGIÃO                       | Region                       | String    | Brazilian geographic region         |
+| ESTADO                       | State                        | String    | Brazilian state                     |
+| PRODUTO                      | Product                      | String    | Fuel type (Gasoline/Ethanol/Diesel) |
+| NÚMERO DE POSTOS PESQUISADOS | Stations Surveyed            | Integer   | Number of gas stations analyzed     |
+| PREÇO MÉDIO REVENDA          | Average Retail Price         | Float     | Mean price per liter (R\$)          |
+| DESVIO PADRÃO REVENDA        | Price Standard Deviation     | Float     | Price variation measure             |
+| PREÇO MÍNIMO/MÁXIMO REVENDA  | Min/Max Retail Price         | Float     | Price range boundaries              |
+| COEF DE VARIAÇÃO REVENDA     | Price Volatility Coefficient | Float     | Market stability indicator          |
 
-Data Points: Prices, stations surveyed, regional variations, volatility metrics
+---
 
-📊 Data Schema
-Original Column (Portuguese)	English Translation	Data Type	Description
-DATA INICIAL	Start Date	Date	Week start date
-DATA FINAL	End Date	Date	Week end date
-REGIÃO	Region	String	Brazilian geographic region
-ESTADO	State	String	Brazilian state
-PRODUTO	Product	String	Fuel type (Gasoline/Ethanol/Diesel)
-NÚMERO DE POSTOS PESQUISADOS	Stations Surveyed	Integer	Number of gas stations analyzed
-PREÇO MÉDIO REVENDA	Average Retail Price	Float	Mean price per liter (R$)
-DESVIO PADRÃO REVENDA	Price Standard Deviation	Float	Price variation measure
-PREÇO MÍNIMO/MÁXIMO REVENDA	Min/Max Retail Price	Float	Price range boundaries
-COEF DE VARIAÇÃO REVENDA	Price Volatility Coefficient	Float	Market stability indicator
+### 🛠️ **Technology Stack**
 
-🛠️ Technology Stack
-Frontend Dashboard
-React 18+: Interactive user interface
+#### **Frontend Dashboard**
 
-Recharts: Professional data visualizations
+* **React 18+**: Interactive user interface
+* **Recharts**: Professional data visualizations
+* **Tailwind CSS**: Modern styling and responsive design
+* **Lucide React**: Clean iconography
 
-Tailwind CSS: Modern styling and responsive design
+#### **Data Analysis**
 
-Lucide React: Clean iconography
+* **Python 3.8+**: Core data processing
+* **Pandas**: Data manipulation and analysis
+* **NumPy**: Mathematical computations
+* **Matplotlib/Seaborn**: Statistical visualizations
 
-Data Analysis
-Python 3.8+: Core data processing
+---
 
-Pandas: Data manipulation and analysis
+### 📈 **Key Analytical Insights**
 
-NumPy: Mathematical computations
+#### **Regional Price Disparities**
 
-Matplotlib/Seaborn: Statistical visualizations
+* **Northern states** show **15-20% higher prices** due to logistical challenges.
+* **Southeast** maintains the most competitive pricing.
+* **Center-West** exhibits moderate pricing with low volatility.
 
-📈 Key Analytical Insights
-Regional Price Disparities
-Northern states show 15-20% higher prices due to logistical challenges.
+#### **Fuel Type Performance**
 
-Southeast maintains the most competitive pricing.
+* **Ethanol** prices correlate strongly with the sugar market (**R² = 0.78**).
+* **Gasoline** aligns with international oil trends with a 2-month lag.
+* **Diesel** shows the least volatility, preferred for commercial use.
 
-Center-West exhibits moderate pricing with low volatility.
+#### **Market Evolution (2004–2021)**
 
-Fuel Type Performance
-Ethanol prices correlate strongly with the sugar market (R² = 0.78).
+* Overall price increase: **180% over 17 years**.
+* Volatility spikes during the **2008 financial crisis** and **2014-2016 political instability**.
+* Post-2018 stabilization due to controlled inflation measures.
 
-Gasoline aligns with international oil trends with a 2-month lag.
+---
 
-Diesel shows the least volatility, preferred for commercial use.
+### 📁 **Project Structure**
 
-Market Evolution (2004–2021)
-Overall price increase: 180% over 17 years.
-
-Volatility spikes during the 2008 financial crisis and 2014-2016 political instability.
-
-Post-2018 stabilization due to controlled inflation measures.
-
-📁 Project Structure
-bash
-Copy
-Edit
+```
 brazil-fuel-prices-analysis/
 ├── data/
 │   ├── original_data/          # Raw ANP datasets
@@ -103,45 +107,60 @@ brazil-fuel-prices-analysis/
 ├── dashboard/                  # React frontend code
 ├── scripts/                    # Python data processing scripts
 └── README.md                   # Project documentation
-📊 Usage Examples
-Dashboard Analysis:
-javascript
-Copy
-Edit
+```
+
+---
+
+### 📊 **Usage Examples**
+
+#### **Dashboard Analysis**:
+
+```javascript
 // Analyze price trends
 const trends = processTimeSeriesData();
 const insights = generateMarketInsights(trends);
-Python Analysis:
-python
-Copy
-Edit
+```
+
+#### **Python Analysis**:
+
+```python
 import pandas as pd
 from analysis.exploratory_analysis import FuelPriceAnalyzer
-🤝 Contributing
-Fork the Repository
+```
 
-Create a Branch: git checkout -b feature/AmazingFeature
+---
 
-Commit Your Changes: git commit -m 'Add AmazingFeature'
+### 🤝 **Contributing**
 
-Push to the Branch: git push origin feature/AmazingFeature
+1. **Fork the Repository**
+2. **Create a Branch**: `git checkout -b feature/AmazingFeature`
+3. **Commit Your Changes**: `git commit -m 'Add AmazingFeature'`
+4. **Push to the Branch**: `git push origin feature/AmazingFeature`
+5. **Open a Pull Request**
 
-Open a Pull Request
+---
 
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+### 📄 **License**
 
-📞 Contact & Support
-Author: Mohamed Suliman
+This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
 
-🙏 Acknowledgments
-ANP Brazil: For comprehensive fuel price data.
+---
 
-Brazilian Government: Open data initiative.
+### 📞 **Contact & Support**
 
-React Community: For excellent visualization libraries.
+* **Author**: Mohamed Suliman
 
-Data Science Community: For methodology and best practices.
+---
 
-⭐ Star This Repository
-Show your support for innovative data analysis and visualization projects! Perfect for showcasing data science, business intelligence, and full-stack development skills in the energy sector. 🌟
+### 🙏 **Acknowledgments**
+
+* **ANP Brazil**: For comprehensive fuel price data.
+* **Brazilian Government**: Open data initiative.
+* **React Community**: For excellent visualization libraries.
+* **Data Science Community**: For methodology and best practices.
+
+---
+
+### ⭐ **Star This Repository**
+
+Show your support for innovative data analysis and visualization projects! Perfect for showcasing **data science, business intelligence, and full-stack development skills** in the energy sector. 🌟
