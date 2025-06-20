@@ -58,12 +58,6 @@ A comprehensive data analysis and visualization project examining Brazilian fuel
 
 ### 🛠️ **Technology Stack**
 
-#### **Frontend Dashboard**
-
-* **React 18+**: Interactive user interface
-* **Recharts**: Professional data visualizations
-* **Tailwind CSS**: Modern styling and responsive design
-* **Lucide React**: Clean iconography
 
 #### **Data Analysis**
 
