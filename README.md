@@ -31,7 +31,7 @@ A comprehensive data analysis and visualization project examining Brazilian fuel
 ### 📋 **Dataset Information**
 
 * **Source**: ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis)
-* **Period**: May 2004 – May 2021 (17 years)
+* **Period**:  2004 –  2021 (18 years)
 * **Records**: 120,823 entries
 * **Coverage**: All Brazilian states and regions
 * **Update Frequency**: Weekly
